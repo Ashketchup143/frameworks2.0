@@ -34,11 +34,20 @@
 // for(let i=0; i<75; i+=2)
 // console.log("hatdog",i,"201")
 
-let x="sladfjaskldfjakls12"
-let z= true
+// let x="sladfjaskldfjakls12"
+// let z= true
 
-for(let i=x.length; i>=0; i--){
-    if(x[i]==="1" || x[i]==="a"){
-        console.log(x[i])
-    }
+// for(let i=x.length; i>=0; i--){
+//     if(x[i]==="1" || x[i]==="a"){
+//         console.log(x[i])
+//     }
+// }
+
+const {students,hello} = require ('./mymodule')
+// const mymodule = require ('./mymodule')
+// console.log(mymodule)
+// mymodule.hello("Japayuks")
+hello()
+for(let i=0; i<students.length; i++){
+    console.log(students[i])
 }

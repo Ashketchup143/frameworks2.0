@@ -1,20 +1,24 @@
-// const express = require('express')
-// const app = express()
+const express = require('express')
+const app = express()
 
-// const port = 8000
+const port = 8000
 
-// app.listen(port, ()=> {
-//     console.log(`Server connected to port ${port}`)
-// })
+app.listen(port, ()=> {
+    console.log(`Server connected to port ${port}`)
+})
 
-// app.get('/', (req, res)=> {
-//     res.send(`
-//     <h1>
-//         Hello World!
-//     </h1>
-//     `)
-//     console.log("request received")
-// })
+app.get('/', (req, res)=> {
+    res.send(`
+    <h1>
+        Hello World!
+    </h1>
+    `)
+    console.log("request received")
+})
+
+// app.listen(port,()=>{
+//     console.log(`Server is running on port ${port}`);
+// });
 
 // let statments = "Happy Birthday to you! Hehe"
 // let vowels=0
@@ -110,3 +114,9 @@
 // for(let i=0; i<a.length; i++){
 //     console.log(a[i])
 // }
+let counter=0
+setInterval(()=>{
+    counter++
+    if (counter<=3)
+    console.log("hello")
+},2000)
